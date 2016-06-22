@@ -5,7 +5,7 @@ var env = require('../env')
 
 module.exports = (repoInfo) => {
   var deferred = Q.defer()
-  var githubToken = env('GITHUB_TOKEN')
+  var token = env('GITHUB_TOKEN')
   var url = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/pulls`
   var options = {
     body: {
@@ -16,7 +16,7 @@ module.exports = (repoInfo) => {
     },
     json: true,
     headers: {
-      'Authorization': `token ${githubToken}`,
+      'Authorization': `token ${token}`,
       'User-Agent': 'preq'
     }
   }
