@@ -2,7 +2,7 @@ var R = require('ramda')
 var Q = require('q')
 var exec = require('child_process').exec
 
-var REGEX = /(github)\.(?:com|org)[:|\/](.*)\/(.*)\.git/
+var REGEX = /(github|bitbucket)\.(?:com|org)[:|\/](.*)\/(.*)\.git/
 
 var props = ['service', 'owner', 'repo']
 var extractData = R.compose(R.zipObj(props), R.tail, R.match(REGEX))
