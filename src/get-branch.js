@@ -8,7 +8,7 @@ module.exports = () => {
     if (error) {
       return deferred.reject(error)
     }
-    return deferred.resolve(branch.replace(/\n$/, ''))
+    deferred.resolve(branch.replace(/\n$/, ''))
   })
 
   return deferred.promise

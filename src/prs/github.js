@@ -10,7 +10,7 @@ module.exports = (repoInfo) => {
   var options = {
     body: {
       title: args.title,
-      body: args.body,
+      body: args.message,
       head: repoInfo.branch,
       base: args.base
     },
