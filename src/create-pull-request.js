@@ -8,6 +8,7 @@ module.exports = (repoInfo) => {
   request.post(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/pulls`, {
     body: {
       title: args.title,
+      message: args.message,
       head: repoInfo.branch,
       base: args.base
     },
