@@ -10,7 +10,7 @@ describe('getRemote function', () => {
       getRemote().then((info) => {
         expect(info).toEqual({ service: 'github', owner: 'stuwilliams47', repo: 'preq' })
         done()
-      })
+      }).catch(done)
     })
 
     it('should return the expected result for a valid https repo', (done) => {
@@ -20,7 +20,7 @@ describe('getRemote function', () => {
       getRemote().then((info) => {
         expect(info).toEqual({ service: 'github', owner: 'stuwilliams47', repo: 'preq' })
         done()
-      })
+      }).catch(done)
     })
   })
 
@@ -32,7 +32,7 @@ describe('getRemote function', () => {
       getRemote().then((info) => {
         expect(info).toEqual({ service: 'bitbucket', owner: 'stuwilliams47', repo: 'preq' })
         done()
-      })
+      }).catch(done)
     })
 
     it('should return the expected result for a valid https repo', (done) => {
@@ -42,7 +42,7 @@ describe('getRemote function', () => {
       getRemote().then((info) => {
         expect(info).toEqual({ service: 'bitbucket', owner: 'stuwilliams47', repo: 'preq' })
         done()
-      })
+      }).catch(done)
     })
   })
 

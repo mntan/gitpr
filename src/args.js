@@ -1,8 +1,8 @@
 var R = require('ramda')
 var argv = require('yargs')
-  .usage('Usage: preq --title [title] --base [base] --body [body] --token [auth token]')
-    .demand(['title', 'base', 'token'])
-    .defaults({ body: '' })
+  .usage('Usage: preq --title [title] --body [body] --base [base]')
+    .demand(['title'])
+    .defaults({ body: '', base: 'master' })
     .argv
 
-module.exports = R.pick(['title', 'base', 'body', 'token'], argv)
+module.exports = R.pick(['title', 'body', 'base'], argv)
