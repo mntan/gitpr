@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
 var getRepoInfo = require('../src/get-repo-info')
-var createPullRequest = require('create-pull-request')
+var createPullRequest = require('../src/create-pull-request')
 
 getRepoInfo().then(createPullRequest).then(console.log).catch(console.log)

@@ -13,13 +13,14 @@ module.exports = (repoInfo) => {
     },
     json: true,
     headers: {
+      'Authorization': `token ${args.token}`,
       'User-Agent': 'preq'
     }
   }, (error, response, body) => {
     if (error) {
       deferred.reject(error)
     } else {
-      deferred.resolve(body.html_url)
+      deferred.resolve(body.message)
     }
   })
 
