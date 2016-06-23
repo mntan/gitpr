@@ -1,6 +1,6 @@
 # gitpr
 
-A command line to create git pull requests
+A command line tool for creating git pull requests
 
 ## Install
 
