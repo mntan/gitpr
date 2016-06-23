@@ -7,7 +7,7 @@
     "pull request",
     "github",
     "bitbucket"
-  ]
+  ],
   "main": "bin/gitpr.js",
   "bin": {
     "gitpr": "bin/gitpr.js"
