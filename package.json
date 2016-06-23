@@ -1,24 +1,24 @@
 {
-  "name": "preq",
+  "name": "gitpr",
   "version": "0.0.1",
   "description": "",
-  "main": "bin/preq.js",
+  "main": "bin/gitpr.js",
   "bin": {
-    "preq": "bin/preq.js"
+    "gitpr": "bin/gitpr.js"
   },
   "scripts": {
     "test": "./node_modules/.bin/jasmine-node spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stuwilliams47/preq.git"
+    "url": "git+https://github.com/stuwilliams47/gitpr.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stuwilliams47/preq/issues"
+    "url": "https://github.com/stuwilliams47/gitpr/issues"
   },
-  "homepage": "https://github.com/stuwilliams47/preq#readme",
+  "homepage": "https://github.com/stuwilliams47/gitpr#readme",
   "devDependencies": {
     "eslint": "^2.13.1",
     "eslint-config-standard": "^5.3.1",
