@@ -2,11 +2,12 @@ var Q = require('q')
 var request = require('request')
 var args = require('../args')
 var env = require('../env')
+var api = require('../../config').bitbucket.api
 
 module.exports = (repoInfo) => {
   var deferred = Q.defer()
   var token = env('BITBUCKET_TOKEN')
-  var url = `https://api.bitbucket.org/2.0/repositories/${repoInfo.owner}/${repoInfo.repo}/pullrequests`
+  var url = `${api.root}/${api.version}/repositories/${repoInfo.owner}/${repoInfo.repo}/pullrequests`
   var options = {
     body: {
       title: args.title,

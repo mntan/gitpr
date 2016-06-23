@@ -2,11 +2,12 @@ var Q = require('q')
 var request = require('request')
 var args = require('../args')
 var env = require('../env')
+var api = require('../../config').github.api
 
 module.exports = (repoInfo) => {
   var deferred = Q.defer()
   var token = env('GITHUB_TOKEN')
-  var url = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/pulls`
+  var url = `${api.root}/repos/${repoInfo.owner}/${repoInfo.repo}/pulls`
   var options = {
     body: {
       title: args.title,
@@ -16,6 +17,7 @@ module.exports = (repoInfo) => {
     },
     json: true,
     headers: {
+      'Accept': `application/vnd.github.${api.version}+json`,
       'Authorization': `token ${token}`,
       'User-Agent': 'preq'
     }
