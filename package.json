@@ -1,6 +1,6 @@
 {
   "name": "gitpr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A command line to create git pull requests",
   "keywords": [
     "git",
