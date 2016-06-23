@@ -1,6 +1,6 @@
 # gitpr
 
-> A command line to create git pull requests
+A command line to create git pull requests
 
 ## Install
 
@@ -8,9 +8,8 @@
 $ npm install gitpr -g
 ```
 
-If using GitHub you will need to create a github personal access token and assign it to an environment variable `GITHUB_TOKEN`
-
-If using Bitbucket you will need to base 64 encode `"username:password"` and assign it to an environment variable `BITBUCKET_TOKEN`    
+* If using GitHub you will need to create a github personal access token and assign it to an environment variable `GITHUB_TOKEN`
+* If using Bitbucket you will need to base 64 encode `"username:password"` and assign it to an environment variable `BITBUCKET_TOKEN`    
 
 ## Usage
 
