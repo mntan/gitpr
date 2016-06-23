@@ -6,7 +6,7 @@ var api = require('../../config').github.api
 
 module.exports = (repoInfo) => {
   var deferred = Q.defer()
-  var token = env('GITHUB_TOKEN')
+  var token = env(api.tokenKey)
   var url = `${api.root}/repos/${repoInfo.owner}/${repoInfo.repo}/pulls`
   var options = {
     body: {
