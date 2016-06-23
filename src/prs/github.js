@@ -27,7 +27,7 @@ module.exports = (repoInfo) => {
     if (error || body.errors) {
       return deferred.reject(error || body.errors)
     }
-    deferred.resolve(body.html_url)
+    deferred.resolve(`Pull request successful: ${body.html_url}`)
   })
 
   return deferred.promise

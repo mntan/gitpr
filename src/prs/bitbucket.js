@@ -33,7 +33,7 @@ module.exports = (repoInfo) => {
     if (error) {
       return deferred.reject(error)
     }
-    deferred.resolve(body.links.html.href)
+    deferred.resolve(`Pull request successful: ${body.links.html.href}`)
   })
 
   return deferred.promise
