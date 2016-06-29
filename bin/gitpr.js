@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 var getRepoInfo = require('../src/get-repo-info')
 var pullRequest = require('../src/pull-request')
