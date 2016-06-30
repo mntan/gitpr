@@ -1,6 +1,6 @@
 var R = require('ramda')
 var argv = require('yargs')
-  .usage('Usage: preq -t [title] -m [message] -b [base]')
+  .usage('Usage: gitpr -t [title] -m [message] -b [base]')
     .help('h')
     .describe({
       t: 'The title of the pull request',
